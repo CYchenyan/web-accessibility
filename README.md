@@ -22,4 +22,14 @@
 ## css 和 javascript 无障碍最佳实践
   [MDN介绍](https://developer.mozilla.org/zh-CN/docs/Learn/Accessibility/CSS_and_JavaScript)
 
-  
+## WAI-ARIA
+
+WAI-ARIA 是一项技术，它可以通过浏览器和一些辅助技术来帮助我们进一步地识别以及实现语义化，这样一来能帮助我们解决问题，也让用户可以了解发生了什么
+
+##### 1. WAI-ARIA定义了一组可作用与html元素上的额外的属性，用于帮助提供额外的语义化以及改善缺乏的可访问性。主要包括：
+
+* __角色：__ 定义了元素是什么或者具有什么功能
+* __属性：__ 定义了元素的属性，可用于赋予元素额外的含义或语义。
+* __状态：__ 定义元素当前条件的特殊属性
+
+___状态和属性的差异：属性通常在整个app的生命周期中不会改变，而状态可以通过jacascript修改。例如：属性：aria-required="true";状态：aria-disabled:"true"___
