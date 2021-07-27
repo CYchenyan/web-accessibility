@@ -33,3 +33,16 @@ WAI-ARIA 是一项技术，它可以通过浏览器和一些辅助技术来帮�
 * __状态：__ 定义元素当前条件的特殊属性
 
 ___状态和属性的差异：属性通常在整个app的生命周期中不会改变，而状态可以通过jacascript修改。例如：属性：aria-required="true";状态：aria-disabled:"true"___
+
+##### 2. 使用WAI-ARIA的场景
+
+* 作为地标用来标示语义化标签的含义，甚至超越标签的含义。例如：`search`, `tabgroup`, `tab`, `listbox`
+* 动态内容更新，使用`aria-live`来通知动态内容的更新
+___off: 默认值，更新不会提醒。___
+___polite:  只有用户空闲的情况下提醒。___
+___assertive: 尽快提醒。___
+___rude: 会以打断用户操作的方式直接提醒。___
+* 优化键盘的无障碍操作，例如使用`tabindex`使div等默认不可被键盘聚焦的元素获取焦点
+* 非语义控件的可访问性，例如当div与css/js有比较复杂的ui操作时，屏幕阅读器很难找到语义的内容，可以通过添加`role`，或者`aria-required`等属性提高网页的可访问性
+
+## Accessible multimedia
